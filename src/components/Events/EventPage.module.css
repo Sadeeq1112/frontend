@@ -1,0 +1,420 @@
+.eventPageContainer {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 620px;
+}
+
+.eventHeaderContainer {
+  background-color: rgb(2, 77, 223);
+  position: relative;
+  overflow: hidden;
+  padding: 80px 30px 20px 30px;
+  color: rgb(255, 255, 255);
+}
+
+.eventHeaderContentContainer {
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.eventImageContainer {
+  padding-left: 0;
+  position: relative;
+  z-index: 1;
+  display: block;
+  height: 7rem;
+  overflow: hidden;
+}
+
+.eventImage {
+  height: 7rem;
+  max-width: 100%;
+}
+
+.eventInfoContainer {
+  padding-left: 15px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  overflow: hidden;
+  white-space: nowrap;
+  flex: 1 1 100%;
+}
+
+.eventNameContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  overflow: hidden;
+  font-weight: normal;
+}
+
+.eventName {  
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  padding-bottom: 12px;
+}
+
+.eventNameMoreInfo {
+  padding: 0 16px;
+  margin-left: 10px;
+  margin-bottom: 12px;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 1.8rem;
+  color: rgb(255, 255, 255);
+}
+
+.eventDate, .eventVenue {
+  font-size: 1rem;
+}
+
+.importantInfoContainer {
+  -webkit-box-flex: 0;
+  flex: 0 0 350px;
+}
+
+.importantInfo {
+  background-color: rgba(36, 39, 41, 0.2);
+  display: block;
+  max-width: 350px;
+  padding: 10px 20px;
+  white-space: normal;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.importantInfoText {
+  display: inline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 0 1em;
+}
+
+.modalContainer {
+  background-image: initial;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background: rgba(0,0,0,.75);
+}
+
+.modalContent {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px 1px;
+  position: static;
+  width: calc(100vw - 30px);
+  max-width: 600px;
+  border-radius: 3px;
+}
+
+.moreButton {
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+.modalTitleContainer {
+  position: relative;
+  background-color: #026cdf;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  color: rgb(255, 255, 255);
+}
+
+.modalTitle {
+  font-size: 2rem;
+  padding: 10px;
+  font-weight: normal;
+  padding-right: 44px;
+  padding-left: 44px;
+  text-align: center;
+  display: block;
+  margin: 0;
+}
+
+.close {
+  cursor: pointer;
+  padding: 0 0;
+  padding-right: 10px;
+  text-align: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 44px;
+  height: 100%;
+  display: inline-block;
+  font-size: 44px;
+}
+
+.modalInfoContainer {
+  font-size: 1.2rem;
+  padding: 20px;
+  color: #262626;
+  background-color: #fff;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.eventTicketContaier {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1;
+  flex: 1 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  min-height: 0;
+  background-color: #f6f6f6;
+}
+
+.sectionContainer {
+  flex-direction: row-reverse;
+  display: flex;
+  flex: 1;
+}
+
+.mapContainer {
+  flex: 1;
+  position: relative;
+  width: auto;
+  height: 100%;
+  text-align: center;
+  background: rgb(232, 236, 242);
+}
+
+.mapImgContainer {
+  /* background: rgb(232, 236, 242); */
+  padding: 100px 0 100px 0;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  align-items: center
+}
+
+.mapImage {
+  background: center center no-repeat;
+  background-size: contain;
+  width: 50%;
+  height: 50%;
+}
+
+.pricesContainer {
+  width: 420px;
+  position: relative;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  min-height: 0;
+  background-color: #fff;
+  box-shadow: none;
+}
+
+.priceFilterContainer {
+  padding: 16px;
+  border-bottom: 1px solid rgb(227, 228, 229);
+}
+
+.ticketQtyContainer {
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  border: 1px solid #026cdf;
+  border-radius: 3px;
+}
+
+.ticketDropdown {
+  position: relative;
+  width: 100%;
+  height: 36px;
+  padding-left: 10px;
+  color: #026cdf;
+  cursor: pointer;
+  background: #fff;
+  font-size: 1.4rem;
+}
+
+.priceSliderContainer {
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.priceContainer {
+  min-width: 4rem;
+  text-align: right;
+  font-size: 2.2rem;
+  flex: 0 0 auto;
+  line-height: 3.2rem;
+}
+
+.price {
+  line-height: 1.4;
+  position: relative;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+  border-radius: 2px;
+  border: 1px solid #999;
+  text-align: center;
+  padding: 6px;
+  width: 100%;
+}
+
+.sliderContainer {
+  height: 30px;
+  margin: 25px 15px 0;
+  -webkit-box-flex: 1;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.slider {
+  top: 12.5px;
+  width: 100%;
+  height: 5px;
+  background-color: #026cdf;
+  border: 1px #262626;
+  border-radius: 4px;
+  position: relative;
+}
+
+.priceTicketSubContainer {
+  padding-bottom: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.ticketListContainer {
+  margin: 0;
+  position: relative;
+  padding: 0 15px;
+}
+
+.ticketContainer {
+  position: relative;
+  border-bottom: 1px solid #ebebeb;
+  list-style-type: none;
+}
+
+.ticketContent {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  padding: 10px 0;
+  text-align: right;
+}
+
+.ticketSplit {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.ticketSplitLeft {
+  text-align: left;
+  flex: 1 1 100%;
+}
+
+.ticketType {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  display: block;
+  font-weight: bold;
+  text-align: left;
+}
+
+.ticketSub {
+  font-size: 1rem;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  max-width: 85%;
+  color: #727272;
+}
+
+.ticketSplitRight {
+  max-width: 55%;
+  padding-left: 15px;
+  flex: 0 0 auto;
+  text-align: right;
+}
+
+.priceButton {
+  color: #026cdf;
+  text-align: center;
+  background-color: rgba(255,255,255,0);
+  border: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  padding: 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.ticketButton {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  cursor: pointer;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
